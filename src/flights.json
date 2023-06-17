@@ -1,0 +1,74 @@
+{
+  "flights": [
+    {
+      "departure": "תל אביב",
+      "destination": "ניו יורק",
+      "price": 1200,
+      "date": "2023-07-15",
+      "has_parking": true
+    },
+    {
+      "departure": "לוס אנג'לס",
+      "destination": "לונדון",
+      "price": 900,
+      "date": "2023-08-10",
+      "has_parking": false
+    },
+    {
+      "departure": "פריז",
+      "destination": "רומא",
+      "price": 500,
+      "date": "2023-09-05",
+      "has_parking": true
+    },
+    {
+      "departure": "ברלין",
+      "destination": "מדריד",
+      "price": 700,
+      "date": "2023-07-25",
+      "has_parking": true
+    },
+    {
+      "departure": "סיאול",
+      "destination": "טוקיו",
+      "price": 1100,
+      "date": "2023-08-05",
+      "has_parking": false
+    },
+    {
+      "departure": "מוסקבה",
+      "destination": "סידני",
+      "price": 1500,
+      "date": "2023-09-20",
+      "has_parking": true
+    },
+    {
+      "departure": "ניו דלהי",
+      "destination": "בנגקוק",
+      "price": 800,
+      "date": "2023-07-30",
+      "has_parking": false
+    },
+    {
+      "departure": "שיקגו",
+      "destination": "מיאמי",
+      "price": 600,
+      "date": "2023-08-15",
+      "has_parking": true
+    },
+    {
+      "departure": "סיאטל",
+      "destination": "וונציה",
+      "price": 1000,
+      "date": "2023-09-10",
+      "has_parking": false
+    },
+    {
+      "departure": "הוואנה",
+      "destination": "קייפטאון",
+      "price": 1300,
+      "date": "2023-07-20",
+      "has_parking": true
+    }
+  ]
+}
