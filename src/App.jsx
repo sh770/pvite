@@ -1,7 +1,7 @@
 // import React from "react";
 import "./App.css";
 import FlightsComponent from "./components/FlightsComponent";
-// import FlightsComponent6 from "./components/FlightsComponent6";
+import FlightsComponent6 from "./components/FlightsComponent6";
 
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
       <div className="card">
         <h1>סוכנות נסיעות</h1>       
         <FlightsComponent />
-        {/* <FlightsComponent6 /> */}
+        <FlightsComponent6 />
       </div>
     </div>
   );
