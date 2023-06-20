@@ -1,20 +1,21 @@
 import { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
+import axios from 'axios';
 
 const FlightsComponent = () => {
-  const [flightsData, setFlightsData] = useState({ flights: [] });
+  const [flightsData, setFlightsData] = useState([]);
   const [selectedRow, setSelectedRow] = useState(null);
 
   useEffect(() => {
     const fetchFlightsData = async () => {
       try {
-        const response = await fetch('src/flights.json');
+        const response = await axios.get('/api/flights');
         console.log(response);
         const data = await response.json();
         console.log(data);
-        setFlightsData({ flights: data.flights });
+        setFlightsData(data);
       } catch (error) {
-        console.error('Error fetching flights:', error);
+        console.log('Error fetching flights:', error);
       }
     };
 
@@ -40,7 +41,7 @@ const FlightsComponent = () => {
           <div className="table-cell">תאריך</div>
           <div className="table-cell">חניות ביניים</div>
         </div>
-        {flightsData.flights.map((flight, index) => (
+        {flightsData.map((flight, index) => (
           <Link
             to={`/flights/${flight.id}`} // כאן יש להגדיר את ה-URL של פרטי הטיסה
             className={`table-row ${selectedRow === index ? 'selected' : ''}`}

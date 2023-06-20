@@ -10,7 +10,8 @@ function App() {
       <div className="card">
         <h1>סוכנות הנסיעות שלך</h1>
         <Routes>
-          <Route path="/pvite/" element={<FlightsComponent />} />
+          <Route path="/" element={<FlightsComponent />} />
+          {/* <Route path="/pvite/" element={<FlightsComponent />} /> */}
           <Route path="/flights/:id" element={<FlightDetailsComponent />} />
         </Routes>
       </div>
