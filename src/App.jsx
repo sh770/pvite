@@ -1,20 +1,20 @@
-// import React from "react";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 import "./App.css";
 import FlightsComponent from "./components/FlightsComponent";
-import FlightsComponent6 from "./components/FlightsComponent6";
+import FlightDetailsComponent from "./components/FlightDetailsComponent";
 
 
 function App() {
-  
-
   return (
-    <div>
+    <BrowserRouter>
       <div className="card">
-        <h1>סוכנות נסיעות</h1>       
-        <FlightsComponent />
-        <FlightsComponent6 />
+        <h1>סוכנות הנסיעות שלך</h1>
+        <Routes>
+          <Route path="/pvite/" element={<FlightsComponent />} />
+          <Route path="/flights/:id" element={<FlightDetailsComponent />} />
+        </Routes>
       </div>
-    </div>
+    </BrowserRouter>
   );
 }
 
