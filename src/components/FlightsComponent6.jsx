@@ -13,7 +13,7 @@ const FlightsComponent6 = () => {
           <div className="table-cell">תאריך</div>
           <div className="table-cell">חניות ביניים</div>
         </div>
-        {flightsData.flights.map((flight, index) => (
+        {flightsData.map((flight, index) => (
           <div className="table-row" key={index}>
             <div className="table-cell">{flight.departure}</div>
             <div className="table-cell">{flight.destination}</div>

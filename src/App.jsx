@@ -1,8 +1,7 @@
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import "./App.css";
-import FlightsComponent from "./components/FlightsComponent";
-import FlightDetailsComponent from "./components/FlightDetailsComponent";
-
+import AllFlights from "./components/AllFlights";
+import FlightDetails from "./components/FlightDetails";
 
 function App() {
   return (
@@ -10,9 +9,8 @@ function App() {
       <div className="card">
         <h1>סוכנות הנסיעות שלך</h1>
         <Routes>
-          <Route path="/" element={<FlightsComponent />} />
-          {/* <Route path="/pvite/" element={<FlightsComponent />} /> */}
-          <Route path="/flights/:id" element={<FlightDetailsComponent />} />
+          <Route path="/" element={<AllFlights />} />
+          <Route path="/flight/:id" element={<FlightDetails />} />
         </Routes>
       </div>
     </BrowserRouter>
