@@ -4,7 +4,7 @@ import react from "@vitejs/plugin-react";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  // base: "/pvite/", //This is the base url of your website
+  base: "/pvite/", //This is the base url of your website
   // server: {
   //   port: 3000,
   // },
